@@ -1,0 +1,327 @@
+Air Quality:
+  learning_rate: 0.001
+  d_model: 256
+  d_ff: 512
+  e_layers: 4
+  seq_len_factor: 3
+  lradj: half
+  train_epochs: 2
+  patience: 2
+  local_lambda: 1.0
+  patch_size: 16
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+
+Measles:
+  learning_rate: 0.001
+  d_model: 256
+  d_ff: 256
+  e_layers: 4
+  lradj: cosine
+  train_epochs: 80
+  patience: 80
+  local_lambda: 1.0
+  patch_size: 32
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+
+SP500:
+  learning_rate: 0.001
+  d_model: 256
+  d_ff: 512
+  e_layers: 3
+  lradj: con4
+  train_epochs: 20
+  patience: 20
+  local_lambda: 0.01
+  patch_size: 32
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+
+Atec:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  e_layers: 4
+  lradj: con3
+  train_epochs: 10
+  patience: 10
+  local_lambda: 0.1
+  patch_size: 16
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+  is_training: 1
+
+Neurolib:
+  learning_rate: 0.001
+  d_model: 128
+  d_ff: 256
+  e_layers: 3
+  lradj: cosine
+  train_epochs: 10
+  patience: 10
+  local_lambda: 1.0
+  patch_size: 32
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+  is_training: 1
+
+Meter:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  e_layers: 4
+  lradj: type3
+  train_epochs: 10
+  patience: 10
+  local_lambda: 0.01
+  patch_size: 32
+  trend_ks: 8
+  use_mark: 0
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+  is_training: 1
+
+SIRS:
+  learning_rate: 0.001
+  d_model: 128
+  d_ff: 256
+  seq_len_factor: 3
+  e_layers: 4
+  lradj: type3
+  train_epochs: 15
+  patience: 15
+  local_lambda: 1.0
+  patch_size: 32
+  trend_ks: 8
+  use_mark: 0
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+
+M5:
+  learning_rate: 0.001
+  d_model: 256
+  d_ff: 512
+  e_layers: 4
+  lradj: cosine
+  train_epochs: 70
+  patience: 70
+  local_lambda: 1.0
+  patch_size: 64
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+
+Temp:
+  learning_rate: 0.002
+  d_model: 64
+  d_ff: 128
+  e_layers: 2
+  lradj: half
+  train_epochs: 1
+  patience: 1
+  local_lambda: 0.01
+  patch_size: 64
+  trend_ks: 8
+  use_mark: 0
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+
+Wind:
+  learning_rate: 0.001
+  d_model: 256
+  d_ff: 256
+  e_layers: 2
+  lradj: half
+  train_epochs: 1
+  patience: 1
+  local_lambda: 10.0
+  patch_size: 64
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+
+Solar:
+  learning_rate: 0.001
+  d_model: 256
+  d_ff: 256
+  e_layers: 2
+  lradj: half
+  train_epochs: 1
+  patience: 1
+  local_lambda: 1.0
+  patch_size: 64
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+  is_training: 1
+
+Mobility:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  e_layers: 4
+  lradj: type3
+  train_epochs: 20
+  patience: 20
+  local_lambda: 0.01
+  patch_size: 64
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+
+Traffic-CA:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  e_layers: 2
+  lradj: type1
+  train_epochs: 10
+  patience: 10
+  local_lambda: 1.0
+  patch_size: 64
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+  is_training: 1
+
+Traffic-GLA:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  e_layers: 2
+  lradj: type1
+  train_epochs: 10
+  patience: 10
+  local_lambda: 1.0
+  patch_size: 64
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 0
+  is_training: 1
+
+Traffic-GBA:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  e_layers: 2
+  lradj: type1
+  train_epochs: 10
+  patience: 10
+  local_lambda: 1.0
+  patch_size: 64
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+  is_training: 1
+
+Wiki:
+  learning_rate: 0.001
+  d_model: 128
+  d_ff: 256
+  e_layers: 2
+  lradj: type3
+  train_epochs: 1
+  batch_size: 2
+
+Rebound:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  train_epochs: 10
+
+Electricity:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  train_epochs: 10
+
+ETTh1:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  train_epochs: 10
+
+ETTh2:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  train_epochs: 10
+
+ETTm1:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  train_epochs: 10
+
+ETTm2:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  train_epochs: 10
+
+Weather:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  train_epochs: 10
+
+Traffic:
+  learning_rate: 0.001
+  d_model: 512
+  d_ff: 512
+  train_epochs: 10
+
+Wiki-2k:
+  batch_size: 4
+  learning_rate: 0.001
+  d_model: 256
+  d_ff: 256
+  e_layers: 2
+  lradj: half
+  train_epochs: 1
+  patience: 1
+  local_lambda: 1.0
+  patch_size: 128
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+  is_training: 1
+
+Wiki-20k:
+  batch_size: 16
+  learning_rate: 0.001
+  d_model: 256
+  d_ff: 256
+  e_layers: 2
+  lradj: cosine
+  train_epochs: 10
+  patience: 10
+  local_lambda: 1.0
+  patch_size: 128
+  trend_ks: 8
+  use_local_loss: 1
+  use_global_loss: 1
+  use_auxiliary_network: 1
+  is_training: 1
