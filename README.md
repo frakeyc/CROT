@@ -114,6 +114,6 @@ Air_Quality:
 
 ## 📈 Performance Benchmarks
 <p align="center">
-<img src=".\pic\benchmark.png" height = "300" alt="" align=center />
+<img src=".\pics\results.png" height = "300" alt="" align=center />
 </p>
 
